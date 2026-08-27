@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музикален Архив - Pazardjik City</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 10px;
+        }
+
+        .header-container {
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: contain;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 25px 0 10px 0;
+            color: #ffffff;
+            border-bottom: 2px solid #333333;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .music-frame {
+            width: 100%;
+            max-width: 1000px;
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        .music-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .music-item {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-left: 4px solid #444444;
+            border-radius: 6px;
+            padding: 14px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .music-item:hover {
+            background-color: #242424;
+            border-color: #555555;
+            border-left-color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .music-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .track-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #eeeeee;
+        }
+
+        .track-artist {
+            font-size: 0.85rem;
+            color: #888888;
+        }
+
+        .music-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #252525;
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #444444;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .music-link:hover {
+            background-color: #383838;
+            border-color: #666666;
+        }
+
+        .placeholder-note {
+            text-align: center;
+            color: #666666;
+            font-style: italic;
+            margin-top: 15px;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 30px;
+            color: #555555;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка със снимката -->
+    <div class="header-container">
+        <img src="pzcity_banner.jpg" alt="Pazardjik City" class="header-image">
+        <h1 class="title">Музикален Архив</h1>
+        <p class="subtitle">Списък с песните и музикалните линкове</p>
+    </div>
+
+    <!-- Фрейм / Контейнер за музикалните линкове -->
+    <div class="music-frame">
+        <ul class="music-list">
+            <!-- Песен 1 -->
+            <li class="music-item">
+                <div class="music-info">
+                    <span class="track-title">4 Посоки</span>
+                    <span class="track-artist">Nug ft. Tekata, Barz1q & RealG</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1W_pg2MtnuJVBh8XIYflJoWMXyXi267Ws/view?usp=drive_link" target="_blank" class="music-link">Слушай / Изтегли</a>
+            </li>
+
+            <!-- Песен 2 -->
+            <li class="music-item">
+                <div class="music-info">
+                    <span class="track-title">Много Питаш</span>
+                    <span class="track-artist">NUG ft wyte & V.I.</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1z4u3kFNJoOL0UiFPowpayMZLnBm964c1/view?usp=drive_link" target="_blank" class="music-link">Слушай / Изтегли</a>
+            </li>
+
+            <!-- Песен 3 -->
+            <li class="music-item">
+                <div class="music-info">
+                    <span class="track-title">ЗИГГИ ЗА(За Г*за)</span>
+                    <span class="track-artist">Barz1q ft. NUG, Wyte G.S. & B4M Bullzai</span>
+                </div>
+                <a href="https://drive.google.com/file/d/1UePyB__5uQMbDv-pcc2q_nRE7dljc_B4/view?usp=drive_link" target="_blank" class="music-link">Слушай / Изтегли</a>
+            </li>
+        </ul>
+
+        <p class="placeholder-note">* В този фрейм могат да се добавят още музикални линкове по-късно.</p>
+    </div>
+
+    <footer>
+        &copy; Pazardjik City Records 2007-2026
+    </footer>
+
+</body>
+</html>
